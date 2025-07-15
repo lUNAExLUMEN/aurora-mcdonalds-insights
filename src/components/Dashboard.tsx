@@ -3,30 +3,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { 
-  TrendingUp, 
-  AlertTriangle, 
-  Users, 
-  BarChart3, 
-  Star, 
-  Search,
-  Plus,
-  Bell,
-  Target,
-  Brain,
-  Eye,
-  Zap
-} from "lucide-react";
+import { TrendingUp, AlertTriangle, Users, BarChart3, Star, Search, Plus, Bell, Target, Brain, Eye, Zap } from "lucide-react";
 import { CampaignOverview } from "./CampaignOverview";
 import { CelebrityRisk } from "./CelebrityRisk";
 import { TrendsExplorer } from "./TrendsExplorer";
 import { AlertsSidebar } from "./AlertsSidebar";
-
 export const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("overview");
-
-  return (
-    <div className="min-h-screen bg-gradient-subtle">
+  return <div className="min-h-screen bg-gradient-subtle">
       {/* Header */}
       <header className="bg-card border-b border-border shadow-card sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -37,8 +21,8 @@ export const Dashboard = () => {
                   <Brain className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold text-foreground">Infosys Aurora</h1>
-                  <p className="text-sm text-muted-foreground">Marketing Intelligence</p>
+                  
+                  
                 </div>
               </div>
             </div>
@@ -97,6 +81,5 @@ export const Dashboard = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
